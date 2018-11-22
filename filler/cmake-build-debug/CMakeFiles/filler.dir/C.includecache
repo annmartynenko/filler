@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/amartyne/filler/filler.c
-filler.h
-/Users/amartyne/filler/filler.h
-stdio.h
--
-
 /Users/amartyne/filler/filler.h
 stdlib.h
 -
@@ -49,4 +43,10 @@ stdlib.h
 -
 unistd.h
 -
+
+/Users/amartyne/filler/make_map.c
+filler.h
+/Users/amartyne/filler/filler.h
+stdio.h
+/Users/amartyne/filler/stdio.h
 

@@ -75,4 +75,5 @@ add_executable(filler
         ./libft/ft_strncpy.c
         ./libft/ft_strsub.c
         write_file.c
+        make_map.c
         )

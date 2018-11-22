@@ -21,7 +21,8 @@
 # include "libft/libft.h"
 # include "get_next_line.h"
 
-char	*write_file();
+char	**write_file();
 int 	player_numb(char *file);
+char	**mke_map(char **file);
 
 #endif

@@ -67,6 +67,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/filler.dir/libft/ft_strnequ.c.o"
   "CMakeFiles/filler.dir/libft/ft_strncpy.c.o"
   "CMakeFiles/filler.dir/write_file.c.o"
+  "CMakeFiles/filler.dir/make_map.c.o"
   "filler.pdb"
   "filler"
 )

@@ -14,30 +14,18 @@
 #include <stdio.h>
 int main()
 {
-	size_t len;
-	char *file1;
+	char **file1;
 	int fd;
-//	char *tmp;
-//	char *file;
-//	int fd2;
+	int i;
 
+	i = 0;
 	file1 = write_file();
-	len = ft_strlen(file1);
-	fd = open("t.txt", O_WRONLY);
-	dprintf(fd,"%zu", len);
-	dprintf(fd,"%s", file1);
+	fd = open("../t.txt", O_WRONLY);
+	while (file1[i] != 0)
+	{
+		dprintf(fd, "%s\n", file1[i]);
+		i++;
+	}
 	close(fd);
-
-
-//	fd2 = open("text.txt", O_RDONLY);
-//	file = ft_strnew(0);
-//	while (get_next_line(fd2, &tmp))
-//	{
-//		file = ft_strjoin(file, tmp);
-//		//printf("%s\n", tmp);
-//		ft_strdel(&tmp);
-//	}
-//	close(fd2);
-//	printf("%s\n", file);
 	return (0);
 }

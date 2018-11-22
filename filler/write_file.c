@@ -12,6 +12,7 @@
 
 #include "filler.h"
 #include "stdio.h"
+
 int 	player_numb(char *file)
 {
 	int i;
@@ -26,20 +27,25 @@ int 	player_numb(char *file)
 	return (play_n);
 }
 
-char	*write_file()
+char	**write_file()
 {
 	char *tmp;
-	char *file;
-	//int fd2;
+	char **file;
+	int fd2;
+	int i;
 
-	//fd2 = open("text.txt", O_RDONLY);
-	file = ft_strnew(0);
-	while (get_next_line(0, &tmp))
+	i = 0;
+	fd2 = open("../text.txt", O_RDONLY);
+	file = (char**)malloc(sizeof(char*) * 23);
+	while (get_next_line(fd2, &tmp))
 	{
-		file = ft_strjoin(file, tmp);
-		printf("fd %s", tmp);
+		file[i] = ft_strdup(tmp);
+		printf("%s\n", file[i]);
 		ft_strdel(&tmp);
+		i++;
 	}
-	//close(fd2);
+	file [i + 1] = 0;
+	close(fd2);
+	file = mke_map(file);
 	return (file);
 }

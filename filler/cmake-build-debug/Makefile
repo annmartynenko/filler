@@ -1932,6 +1932,33 @@ libft/ft_toupper.c.s:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/libft/ft_toupper.c.s
 .PHONY : libft/ft_toupper.c.s
 
+make_map.o: make_map.c.o
+
+.PHONY : make_map.o
+
+# target to build an object file
+make_map.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/make_map.c.o
+.PHONY : make_map.c.o
+
+make_map.i: make_map.c.i
+
+.PHONY : make_map.i
+
+# target to preprocess a source file
+make_map.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/make_map.c.i
+.PHONY : make_map.c.i
+
+make_map.s: make_map.c.s
+
+.PHONY : make_map.s
+
+# target to generate assembly for a file
+make_map.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/make_map.c.s
+.PHONY : make_map.c.s
+
 write_file.o: write_file.c.o
 
 .PHONY : write_file.o
@@ -2169,6 +2196,9 @@ help:
 	@echo "... libft/ft_toupper.o"
 	@echo "... libft/ft_toupper.i"
 	@echo "... libft/ft_toupper.s"
+	@echo "... make_map.o"
+	@echo "... make_map.i"
+	@echo "... make_map.s"
 	@echo "... write_file.o"
 	@echo "... write_file.i"
 	@echo "... write_file.s"

@@ -94,6 +94,9 @@
 		<Unit filename="/Users/amartyne/filler/get_next_line.c">
 			<Option target="filler"/>
 		</Unit>
+		<Unit filename="/Users/amartyne/filler/get_next_line.h">
+			<Option target="filler"/>
+		</Unit>
 		<Unit filename="/Users/amartyne/filler/libft/ft_arrfree.c">
 			<Option target="filler"/>
 		</Unit>
@@ -287,6 +290,9 @@
 			<Option target="filler"/>
 		</Unit>
 		<Unit filename="/Users/amartyne/filler/libft/ft_toupper.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="/Users/amartyne/filler/make_map.c">
 			<Option target="filler"/>
 		</Unit>
 		<Unit filename="/Users/amartyne/filler/write_file.c">
