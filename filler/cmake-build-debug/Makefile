@@ -123,6 +123,33 @@ filler/fast:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/build
 .PHONY : filler/fast
 
+distance.o: distance.c.o
+
+.PHONY : distance.o
+
+# target to build an object file
+distance.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/distance.c.o
+.PHONY : distance.c.o
+
+distance.i: distance.c.i
+
+.PHONY : distance.i
+
+# target to preprocess a source file
+distance.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/distance.c.i
+.PHONY : distance.c.i
+
+distance.s: distance.c.s
+
+.PHONY : distance.s
+
+# target to generate assembly for a file
+distance.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/distance.c.s
+.PHONY : distance.c.s
+
 filler.o: filler.c.o
 
 .PHONY : filler.o
@@ -1959,6 +1986,33 @@ make_map.c.s:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/make_map.c.s
 .PHONY : make_map.c.s
 
+piece.o: piece.c.o
+
+.PHONY : piece.o
+
+# target to build an object file
+piece.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/piece.c.o
+.PHONY : piece.c.o
+
+piece.i: piece.c.i
+
+.PHONY : piece.i
+
+# target to preprocess a source file
+piece.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/piece.c.i
+.PHONY : piece.c.i
+
+piece.s: piece.c.s
+
+.PHONY : piece.s
+
+# target to generate assembly for a file
+piece.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/piece.c.s
+.PHONY : piece.c.s
+
 write_file.o: write_file.c.o
 
 .PHONY : write_file.o
@@ -1995,6 +2049,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... filler"
+	@echo "... distance.o"
+	@echo "... distance.i"
+	@echo "... distance.s"
 	@echo "... filler.o"
 	@echo "... filler.i"
 	@echo "... filler.s"
@@ -2199,6 +2256,9 @@ help:
 	@echo "... make_map.o"
 	@echo "... make_map.i"
 	@echo "... make_map.s"
+	@echo "... piece.o"
+	@echo "... piece.i"
+	@echo "... piece.s"
 	@echo "... write_file.o"
 	@echo "... write_file.i"
 	@echo "... write_file.s"

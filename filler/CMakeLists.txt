@@ -76,4 +76,6 @@ add_executable(filler
         ./libft/ft_strsub.c
         write_file.c
         make_map.c
+        piece.c
+        distance.c
         )

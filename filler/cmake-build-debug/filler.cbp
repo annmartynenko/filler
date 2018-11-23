@@ -85,6 +85,9 @@
 		<Unit filename="/Users/amartyne/filler/Makefile">
 			<Option target="filler"/>
 		</Unit>
+		<Unit filename="/Users/amartyne/filler/distance.c">
+			<Option target="filler"/>
+		</Unit>
 		<Unit filename="/Users/amartyne/filler/filler.c">
 			<Option target="filler"/>
 		</Unit>
@@ -293,6 +296,9 @@
 			<Option target="filler"/>
 		</Unit>
 		<Unit filename="/Users/amartyne/filler/make_map.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="/Users/amartyne/filler/piece.c">
 			<Option target="filler"/>
 		</Unit>
 		<Unit filename="/Users/amartyne/filler/write_file.c">

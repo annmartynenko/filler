@@ -13,21 +13,29 @@
 #include "filler.h"
 #include "stdio.h"
 
-int 	player_numb(char *file)
+int 	player_numb(char **file)
 {
 	int i;
+	int j;
 	int play_n;
 
+	j = 0;
 	i = 0;
 	while (file[i] != '\0')
 	{
-		if (file[i] == ' ' && file[i + 1] == 'p')
-			play_n = ft_atoi(&file[i + 2]);
+		j = 0;
+		while (file[i][j])
+		{
+			if (file[i][j] == ' ' && file[i][j + 1] == 'p')
+				play_n = ft_atoi((file[i] + j + 2));
+			j++;
+		}
+		i++;
 	}
 	return (play_n);
 }
 
-char	**write_file()
+char	**write_file(t_inf *map)
 {
 	char *tmp;
 	char **file;
@@ -46,6 +54,8 @@ char	**write_file()
 	}
 	file [i + 1] = 0;
 	close(fd2);
-	file = mke_map(file);
+	map->player = player_numb(file);
+	map->piece = mk_piece(file);
+	file = mke_map(file, map);
 	return (file);
 }

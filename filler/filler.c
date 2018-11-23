@@ -14,16 +14,37 @@
 #include <stdio.h>
 int main()
 {
-	char **file1;
-	int fd;
-	int i;
+	t_inf	map;
+	int		fd;
+	int		i;
+	int		j;
+	char	**mp;
 
 	i = 0;
-	file1 = write_file();
+	mp = write_file(&map);
 	fd = open("../t.txt", O_WRONLY);
-	while (file1[i] != 0)
+//	while (mp[i] != 0)
+//	{
+//		dprintf(fd, "%s\n", mp[i]);
+//		i++;
+//	}
+	dprintf(fd, "%d\n", map.player);
+	i = 0;
+	while (map.piece[i] != 0)
 	{
-		dprintf(fd, "%s\n", file1[i]);
+		dprintf(fd, "%s\n", map.piece[i]);
+		i++;
+	}
+	i = 0;
+	while (map.kart[i] != 0)
+	{
+		j = 0;
+		while (map.kart[i][j])
+		{
+			dprintf(fd, " %d ", map.kart[i][j]);
+			j++;
+		}
+		dprintf(fd, "\n");
 		i++;
 	}
 	close(fd);
