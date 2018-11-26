@@ -27,13 +27,17 @@ typedef struct 	s_inf
 	int height;
 	int player;
 	int **kart;
-	char **piece;
+	int **piece;
+	int *t;
 }				t_inf;
 
 char	**write_file(t_inf *map);
 int 	player_numb(char **file);
 char	**mke_map(char **file, t_inf *map);
-char	**mk_piece(char **file);
+void	mk_piece(char **file, t_inf *map);
 void	mk_distance(t_inf *map);
+void	find_t(t_inf *map);
+int		can_insert(t_inf *map, int i, int j);
+
 
 #endif

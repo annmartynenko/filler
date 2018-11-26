@@ -44,7 +44,7 @@ char	**write_file(t_inf *map)
 
 	i = 0;
 	fd2 = open("../text.txt", O_RDONLY);
-	file = (char**)malloc(sizeof(char*) * 23);
+	file = (char**)malloc(sizeof(char*) * 21);
 	while (get_next_line(fd2, &tmp))
 	{
 		file[i] = ft_strdup(tmp);
@@ -55,7 +55,7 @@ char	**write_file(t_inf *map)
 	file [i + 1] = 0;
 	close(fd2);
 	map->player = player_numb(file);
-	map->piece = mk_piece(file);
+	mk_piece(file, map);
 	file = mke_map(file, map);
 	return (file);
 }

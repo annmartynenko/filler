@@ -78,4 +78,6 @@ add_executable(filler
         make_map.c
         piece.c
         distance.c
+        find_t.c
+        can_insert.c
         )

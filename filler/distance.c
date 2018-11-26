@@ -13,28 +13,46 @@
 #include "filler.h"
 #include "stdio.h"
 
+void	ok_position(t_inf *map, int i, int j, int n)
+{
+	if (i + 1 < map->height)
+		if (map->kart[i + 1][j] && map->kart[i + 1][j] == -3)
+			map->kart[i + 1][j] = n;
+	if (i - 1 >= 0)
+		if (map->kart[i - 1][j] && map->kart[i - 1][j] == -3)
+			map->kart[i - 1][j] = n;
+	if (j + 1 < map->weight)
+		if (map->kart[i][j + 1] && map->kart[i][j + 1] == -3)
+			map->kart[i][j + 1] = n;
+	if (j - 1 >= 0)
+		if (map->kart[i][j - 1] && map->kart[i][j - 1] == -3)
+			map->kart[i][j - 1] = n;
+}
+
 void	mk_distance(t_inf *map)
 {
 	int i;
 	int j;
 	int n;
+	int a;
 
-	i = 0;
 	n = 1;
-	while(i < map->height)
+	a = 0;
+	while (a < map->weight * map->height - 2)
 	{
-		j = 0;
-		while (j < map->weight)
+		i = 0;
+		while (i < map->height)
 		{
-			if (map->kart[i][j] == -2 || map->kart[i][j] == n - 1)
+			j = 0;
+			while (j < map->weight)
 			{
-				map->kart[i][j + 1] = n;
-				map->kart[i][j - 1] = n;
-				map->kart[i + 1][j] = n;
-				map->kart[i - 1][j] = n;
-				n++;
+				if (map->kart[i][j] == -2 || map->kart[i][j] == n - 1)
+					ok_position(map, i, j, n);
+				j++;
 			}
+			i++;
 		}
-		i++;
+		n++;
+		a++;
 	}
 }

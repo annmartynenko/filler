@@ -70,6 +70,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/filler.dir/make_map.c.o"
   "CMakeFiles/filler.dir/piece.c.o"
   "CMakeFiles/filler.dir/distance.c.o"
+  "CMakeFiles/filler.dir/find_t.c.o"
+  "CMakeFiles/filler.dir/can_insert.c.o"
   "filler.pdb"
   "filler"
 )

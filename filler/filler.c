@@ -19,7 +19,7 @@ int main()
 	int		i;
 	int		j;
 	char	**mp;
-
+//
 	i = 0;
 	mp = write_file(&map);
 	fd = open("../t.txt", O_WRONLY);
@@ -28,18 +28,25 @@ int main()
 //		dprintf(fd, "%s\n", mp[i]);
 //		i++;
 //	}
-	dprintf(fd, "%d\n", map.player);
+//	dprintf(fd, "%d\n", map.player);
+//	i = 0;
+//	j = 0;
+//	while (map.piece[i] != 0)
+//	{
+//		while (map.piece[i][j])
+//		{
+//			dprintf(fd, " %d ", map.piece[i][j]);
+//			j++;
+//		}
+//		dprintf(fd, "\n");
+//		i++;
+//	}
 	i = 0;
-	while (map.piece[i] != 0)
-	{
-		dprintf(fd, "%s\n", map.piece[i]);
-		i++;
-	}
-	i = 0;
-	while (map.kart[i] != 0)
+
+	while (i < map.height)
 	{
 		j = 0;
-		while (map.kart[i][j])
+		while (j < map.weight)
 		{
 			dprintf(fd, " %d ", map.kart[i][j]);
 			j++;
@@ -47,6 +54,8 @@ int main()
 		dprintf(fd, "\n");
 		i++;
 	}
+	dprintf(fd, "result %d %d\n", map.t[0], map.t[1]);
 	close(fd);
+	//printf("%d %d\n", map.t[1], map.t[0]);
 	return (0);
 }

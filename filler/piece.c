@@ -43,7 +43,7 @@ int		count_piece_len(char **file, int *column)
 	return (row);
 }
 
-char	**copy_piece(char **file, char **piec)
+void	copy_piece(char **file, t_inf *map)
 {
 	int i;
 	int j;
@@ -58,41 +58,43 @@ char	**copy_piece(char **file, char **piec)
 		j1 = 0;
 		while(file[i][j])
 		{
-			if ((file[i][j] == '*' || file[i][j] == '.') &&\
-			(file[i][j + 1] == '*' || file[i][j + 1] == '.' ||\
-			file[i][j + 1] == '\0'))
+			if (file[i][j] == '*'  && (file[i][j + 1] == '*' ||\
+			file[i][j] == '.' || file[i][j + 1] == '\0'))
 			{
-				piec[i1][j1] = file[i][j];
+				map->piece[i1][j1] = -4;
+				j1++;
+			}
+			if (file[i][j] == '.'  && (file[i][j + 1] == '*' ||\
+			file[i][j] == '.' || file[i][j + 1] == '\0'))
+			{
+				map->piece[i1][j1] = -5;
 				j1++;
 			}
 			if (file[i][j] == '*' && file[i][j + 1] == '\0')
 			{
-				piec[i1][j1] = '\0';
+				map->piece[i1][j1] = '\0';
 				i1++;
 			}
 			j++;
 		}
 		i++;
 	}
-	piec[i1] = 0;
-	return (piec);
+	map->piece[i1] = 0;
 }
 
-char **mk_piece(char **file)
+void	mk_piece(char **file, t_inf *map)
 {
 	int		i;
-	char	**piec;
 	int		column;
 	int 	row;
 
 	i = 0;
 	row = count_piece_len(file, &column);
-	piec = (char**)malloc(sizeof(char*) * row + 1);
+	map->piece = (int**)malloc(sizeof(int*) * row + 1);
 	while (i < row)
 	{
-		piec[i] = (char*)malloc(sizeof(char) * column + 1);
+		map->piece[i] = (int*)malloc(sizeof(char) * column + 1);
 		i++;
 	}
-	piec = copy_piece(file, piec);
-	return (piec);
+	copy_piece(file, map);
 }

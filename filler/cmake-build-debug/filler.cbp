@@ -85,6 +85,9 @@
 		<Unit filename="/Users/amartyne/filler/Makefile">
 			<Option target="filler"/>
 		</Unit>
+		<Unit filename="/Users/amartyne/filler/can_insert.c">
+			<Option target="filler"/>
+		</Unit>
 		<Unit filename="/Users/amartyne/filler/distance.c">
 			<Option target="filler"/>
 		</Unit>
@@ -92,6 +95,9 @@
 			<Option target="filler"/>
 		</Unit>
 		<Unit filename="/Users/amartyne/filler/filler.h">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="/Users/amartyne/filler/find_t.c">
 			<Option target="filler"/>
 		</Unit>
 		<Unit filename="/Users/amartyne/filler/get_next_line.c">

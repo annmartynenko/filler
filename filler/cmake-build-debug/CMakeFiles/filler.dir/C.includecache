@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/amartyne/filler/distance.c
-filler.h
-/Users/amartyne/filler/filler.h
-stdio.h
-/Users/amartyne/filler/stdio.h
-
-/Users/amartyne/filler/filler.c
-filler.h
-/Users/amartyne/filler/filler.h
-stdio.h
--
-
 /Users/amartyne/filler/filler.h
 stdlib.h
 -
@@ -33,10 +21,6 @@ libft/libft.h
 /Users/amartyne/filler/libft/libft.h
 get_next_line.h
 /Users/amartyne/filler/get_next_line.h
-
-/Users/amartyne/filler/get_next_line.c
-filler.h
-/Users/amartyne/filler/filler.h
 
 /Users/amartyne/filler/get_next_line.h
 stdlib.h
@@ -59,18 +43,6 @@ stdlib.h
 -
 unistd.h
 -
-
-/Users/amartyne/filler/make_map.c
-filler.h
-/Users/amartyne/filler/filler.h
-stdio.h
-/Users/amartyne/filler/stdio.h
-
-/Users/amartyne/filler/piece.c
-filler.h
-/Users/amartyne/filler/filler.h
-stdio.h
-/Users/amartyne/filler/stdio.h
 
 /Users/amartyne/filler/write_file.c
 filler.h

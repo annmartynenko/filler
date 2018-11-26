@@ -63,7 +63,7 @@ int		count_map_len(char **file, int *column)
 	while(file[i])
 	{
 		j = 0;
-		while(file[i][j])
+		while(file[i][j] != '\0')
 		{
 			if(file[i][j] == 'u' && file[i][j + 1] == ' ')
 			{
@@ -135,5 +135,6 @@ char	**mke_map(char **file, t_inf *map)
 	cart = copy_map(file, cart);
 	start_map(map, cart);
 	mk_distance(map);
+	find_t(map);
 	return (cart);
 }
