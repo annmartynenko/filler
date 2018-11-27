@@ -13,49 +13,58 @@
 #include "filler.h"
 #include "stdio.h"
 
-int 	player_numb(char **file)
+int 	player_numb(char *file)
 {
 	int i;
-	int j;
 	int play_n;
 
-	j = 0;
 	i = 0;
+	play_n = 0;
 	while (file[i] != '\0')
 	{
-		j = 0;
-		while (file[i][j])
+		if (file[i] == ' ' && file[i + 1] == 'p')
 		{
-			if (file[i][j] == ' ' && file[i][j + 1] == 'p')
-				play_n = ft_atoi((file[i] + j + 2));
-			j++;
+			play_n = ft_atoi(&file[i + 2]);
+			break ;
 		}
 		i++;
 	}
 	return (play_n);
 }
 
-char	**write_file(t_inf *map)
+void	write_file(t_inf *map)
 {
 	char *tmp;
-	char **file;
 	int fd2;
 	int i;
+	int i_map;
+	int i_pie;
 
 	i = 0;
+	i_map = 0;
+	i_pie = 0;
 	fd2 = open("../text.txt", O_RDONLY);
-	file = (char**)malloc(sizeof(char*) * 21);
 	while (get_next_line(fd2, &tmp))
 	{
-		file[i] = ft_strdup(tmp);
-		printf("%s\n", file[i]);
+		if (map->player == 0)
+			map->player = player_numb(tmp);
+		if (map->height == 0 && map->weight == 0)
+			count_map_len(tmp, map);
+		if (map->height > 0 && map->weight > 0 &&\
+		map->row == 0 && map->column == 0)
+			fill_start(map, tmp, &i_map);
+		if (map->row == 0 && map->column == 0)
+			count_piece_len(tmp, map);
+		if (map->column > 0 && map->row > 0)
+			copy_piece(tmp, map, &i_pie);
+		printf("%s\n", tmp);
 		ft_strdel(&tmp);
 		i++;
 	}
-	file [i + 1] = 0;
 	close(fd2);
-	map->player = player_numb(file);
-	mk_piece(file, map);
-	file = mke_map(file, map);
-	return (file);
+	printf("player %d, height %d, weight %d, row %d, column %d \n",\
+	map->player, map->height, map->weight, map->row, map->column);
+	mk_distance(map);
+	find_t(map);
+
 }

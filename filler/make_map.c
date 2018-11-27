@@ -13,32 +13,30 @@
 #include "filler.h"
 #include "stdio.h"
 
-void	fill_start(t_inf *map, char **cart)
+void	fill_start(t_inf *map, char *cart, int *i)
 {
-	int i;
 	int j;
+	int k;
 
-	i = 0;
-	while (i < map->height)
+	j = 0;
+	k = 0;
+	while (cart[k])
 	{
-		j = 0;
-		while (j < map->weight)
-		{
-			if (cart[i][j] == '.')
-				map->kart[i][j] = -3;
-			else if ((cart[i][j] == 'O' && map->player == 1) ||\
-			(cart[i][j] == 'X' && map->player == 2))
-				map->kart[i][j] = -1;
-			else if ((cart[i][j] == 'X' && map->player == 1) ||\
-			(cart[i][j] == 'O' && map->player == 2))
-				map->kart[i][j] = -2;
-			j++;
-		}
-		i++;
+		if (cart[k] == '.')
+			map->kart[(*i)][j++] = -3;
+		else if ((cart[k] == 'O' && map->player == 1) ||\
+		(cart[k] == 'X' && map->player == 2))
+			map->kart[(*i)][j++] = -1;
+		else if ((cart[k] == 'X' && map->player == 1) ||\
+		(cart[k] == 'O' && map->player == 2))
+			map->kart[(*i)][j++] = -2;
+		k++;
 	}
+	if (j != 0)
+		(*i)++;
 }
 
-void	start_map(t_inf *map, char **cart)
+void	start_map(t_inf *map)
 {
 	int i;
 
@@ -49,37 +47,26 @@ void	start_map(t_inf *map, char **cart)
 		map->kart[i] = (int*)malloc(sizeof(int) * map->weight + 1);
 		i++;
 	}
-	fill_start(map, cart);
 }
 
-int		count_map_len(char **file, int *column)
+void	count_map_len(char *file, t_inf *map)
 {
-	int row;
 	int i;
-	int j;
 
 	i = 0;
-	row = 0;
 	while(file[i])
 	{
-		j = 0;
-		while(file[i][j] != '\0')
+		if(file[i] == 'u' && file[i + 1] == ' ')
 		{
-			if(file[i][j] == 'u' && file[i][j + 1] == ' ')
-			{
-				j += 2;
-				row = ft_atoi((file[i] + j));
-				j += 2;
-				*column = ft_atoi((file[i] + j));
-				break ;
-			}
-			j++;
-		}
-		if (row != 0)
+			i += 2;
+			map->height = ft_atoi(&file[i]);
+			i += 2;
+			map->weight = ft_atoi(&file[i]);
 			break ;
+		}
 		i++;
 	}
-	return (row);
+	start_map(map);
 }
 
 char	**copy_map(char **file, char **map)
@@ -118,23 +105,19 @@ char	**copy_map(char **file, char **map)
 	return (map);
 }
 
-char	**mke_map(char **file, t_inf *map)
+void	mke_map(t_inf *map)
 {
 	int		i;
 	char	**cart;
 
 	i = 0;
-	map->height = count_map_len(file, &map->weight);
 	cart = (char**)malloc(sizeof(char*) * map->height + 1);
 	while (i < map->height)
 	{
 		cart[i] = (char*)malloc(sizeof(char) * map->weight + 1);
 		i++;
 	}
-	//map[i] = 0;
-	cart = copy_map(file, cart);
-	start_map(map, cart);
-	mk_distance(map);
-	find_t(map);
-	return (cart);
+	//cart[i] = 0;
+	//cart = copy_map(file, cart);
+
 }
