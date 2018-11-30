@@ -19,7 +19,6 @@
 # include <sys/types.h>
 # include <sys/stat.h>
 # include "libft/libft.h"
-# include "get_next_line.h"
 
 typedef struct 	s_inf
 {

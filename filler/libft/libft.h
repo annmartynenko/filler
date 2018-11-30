@@ -13,9 +13,13 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# define BUFF_SIZE  1
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <sys/types.h>
+# include <sys/stat.h>
+# include <fcntl.h>
 
 typedef struct		s_list
 {
@@ -23,6 +27,7 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+
 void				*ft_memset(void *b, int c, size_t len);
 char				*ft_strdup(const char *s1);
 size_t				ft_strlen(const char *s);
@@ -91,5 +96,6 @@ int					*ft_range(int min, int max);
 int					ft_power(int nb, int power);
 void				ft_arrfree(char **s);
 void				ft_lstaddback(t_list *alst, t_list *new);
+int					get_next_line(const int fd, char **line);
 
 #endif

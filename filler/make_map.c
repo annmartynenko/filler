@@ -30,10 +30,14 @@ void	fill_start(t_inf *map, char *cart, int *i)
 		else if ((cart[k] == 'X' && map->player == 1) ||\
 		(cart[k] == 'O' && map->player == 2))
 			map->kart[(*i)][j++] = -2;
+		if (cart[k + 1] && cart[k + 1] == '\0')
+			map->kart[(*i)][j] = 0;
 		k++;
 	}
 	if (j != 0)
 		(*i)++;
+	if ((*i) == map->height)
+		map->kart[(*i)] = 0;
 }
 
 void	start_map(t_inf *map)
@@ -68,7 +72,7 @@ void	count_map_len(char *file, t_inf *map)
 	}
 	start_map(map);
 }
-
+/*
 char	**copy_map(char **file, char **map)
 {
 	int i;
@@ -121,3 +125,4 @@ void	mke_map(t_inf *map)
 	//cart = copy_map(file, cart);
 
 }
+ */

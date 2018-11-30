@@ -3,28 +3,19 @@
 
 CMakeFiles/filler.dir/can_insert.c.o: ../can_insert.c
 CMakeFiles/filler.dir/can_insert.c.o: ../filler.h
-CMakeFiles/filler.dir/can_insert.c.o: ../get_next_line.h
 CMakeFiles/filler.dir/can_insert.c.o: ../libft/libft.h
 
 CMakeFiles/filler.dir/distance.c.o: ../distance.c
 CMakeFiles/filler.dir/distance.c.o: ../filler.h
-CMakeFiles/filler.dir/distance.c.o: ../get_next_line.h
 CMakeFiles/filler.dir/distance.c.o: ../libft/libft.h
 
 CMakeFiles/filler.dir/filler.c.o: ../filler.c
 CMakeFiles/filler.dir/filler.c.o: ../filler.h
-CMakeFiles/filler.dir/filler.c.o: ../get_next_line.h
 CMakeFiles/filler.dir/filler.c.o: ../libft/libft.h
 
 CMakeFiles/filler.dir/find_t.c.o: ../filler.h
 CMakeFiles/filler.dir/find_t.c.o: ../find_t.c
-CMakeFiles/filler.dir/find_t.c.o: ../get_next_line.h
 CMakeFiles/filler.dir/find_t.c.o: ../libft/libft.h
-
-CMakeFiles/filler.dir/get_next_line.c.o: ../filler.h
-CMakeFiles/filler.dir/get_next_line.c.o: ../get_next_line.c
-CMakeFiles/filler.dir/get_next_line.c.o: ../get_next_line.h
-CMakeFiles/filler.dir/get_next_line.c.o: ../libft/libft.h
 
 CMakeFiles/filler.dir/libft/ft_arrfree.c.o: ../libft/ft_arrfree.c
 CMakeFiles/filler.dir/libft/ft_arrfree.c.o: ../libft/libft.h
@@ -208,18 +199,18 @@ CMakeFiles/filler.dir/libft/ft_tolower.c.o: ../libft/ft_tolower.c
 
 CMakeFiles/filler.dir/libft/ft_toupper.c.o: ../libft/ft_toupper.c
 
+CMakeFiles/filler.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
+CMakeFiles/filler.dir/libft/get_next_line.c.o: ../libft/libft.h
+
 CMakeFiles/filler.dir/make_map.c.o: ../filler.h
-CMakeFiles/filler.dir/make_map.c.o: ../get_next_line.h
 CMakeFiles/filler.dir/make_map.c.o: ../libft/libft.h
 CMakeFiles/filler.dir/make_map.c.o: ../make_map.c
 
 CMakeFiles/filler.dir/piece.c.o: ../filler.h
-CMakeFiles/filler.dir/piece.c.o: ../get_next_line.h
 CMakeFiles/filler.dir/piece.c.o: ../libft/libft.h
 CMakeFiles/filler.dir/piece.c.o: ../piece.c
 
 CMakeFiles/filler.dir/write_file.c.o: ../filler.h
-CMakeFiles/filler.dir/write_file.c.o: ../get_next_line.h
 CMakeFiles/filler.dir/write_file.c.o: ../libft/libft.h
 CMakeFiles/filler.dir/write_file.c.o: ../write_file.c
 

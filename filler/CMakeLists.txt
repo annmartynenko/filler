@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(filler
         filler.c
         Makefile
-        get_next_line.c
+        ./libft/get_next_line.c
         ./libft/ft_arrfree.c
         ./libft/ft_atoi.c
         ./libft/ft_bzero.c

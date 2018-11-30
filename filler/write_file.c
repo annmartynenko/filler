@@ -36,11 +36,9 @@ void	write_file(t_inf *map)
 {
 	char *tmp;
 	int fd2;
-	int i;
 	int i_map;
 	int i_pie;
 
-	i = 0;
 	i_map = 0;
 	i_pie = 0;
 	fd2 = open("../text.txt", O_RDONLY);
@@ -59,7 +57,6 @@ void	write_file(t_inf *map)
 			copy_piece(tmp, map, &i_pie);
 		printf("%s\n", tmp);
 		ft_strdel(&tmp);
-		i++;
 	}
 	close(fd2);
 	printf("player %d, height %d, weight %d, row %d, column %d \n",\

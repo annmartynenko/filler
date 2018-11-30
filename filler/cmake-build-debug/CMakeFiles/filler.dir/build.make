@@ -70,18 +70,18 @@ CMakeFiles/filler.dir/filler.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/filler.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amartyne/filler/filler.c -o CMakeFiles/filler.dir/filler.c.s
 
-CMakeFiles/filler.dir/get_next_line.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/get_next_line.c.o: ../get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amartyne/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/filler.dir/get_next_line.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/get_next_line.c.o   -c /Users/amartyne/filler/get_next_line.c
+CMakeFiles/filler.dir/libft/get_next_line.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amartyne/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/filler.dir/libft/get_next_line.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/get_next_line.c.o   -c /Users/amartyne/filler/libft/get_next_line.c
 
-CMakeFiles/filler.dir/get_next_line.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/get_next_line.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amartyne/filler/get_next_line.c > CMakeFiles/filler.dir/get_next_line.c.i
+CMakeFiles/filler.dir/libft/get_next_line.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/get_next_line.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amartyne/filler/libft/get_next_line.c > CMakeFiles/filler.dir/libft/get_next_line.c.i
 
-CMakeFiles/filler.dir/get_next_line.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/get_next_line.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amartyne/filler/get_next_line.c -o CMakeFiles/filler.dir/get_next_line.c.s
+CMakeFiles/filler.dir/libft/get_next_line.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/get_next_line.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amartyne/filler/libft/get_next_line.c -o CMakeFiles/filler.dir/libft/get_next_line.c.s
 
 CMakeFiles/filler.dir/libft/ft_arrfree.c.o: CMakeFiles/filler.dir/flags.make
 CMakeFiles/filler.dir/libft/ft_arrfree.c.o: ../libft/ft_arrfree.c
@@ -1009,7 +1009,7 @@ CMakeFiles/filler.dir/can_insert.c.s: cmake_force
 # Object files for target filler
 filler_OBJECTS = \
 "CMakeFiles/filler.dir/filler.c.o" \
-"CMakeFiles/filler.dir/get_next_line.c.o" \
+"CMakeFiles/filler.dir/libft/get_next_line.c.o" \
 "CMakeFiles/filler.dir/libft/ft_arrfree.c.o" \
 "CMakeFiles/filler.dir/libft/ft_atoi.c.o" \
 "CMakeFiles/filler.dir/libft/ft_bzero.c.o" \
@@ -1086,7 +1086,7 @@ filler_OBJECTS = \
 filler_EXTERNAL_OBJECTS =
 
 filler: CMakeFiles/filler.dir/filler.c.o
-filler: CMakeFiles/filler.dir/get_next_line.c.o
+filler: CMakeFiles/filler.dir/libft/get_next_line.c.o
 filler: CMakeFiles/filler.dir/libft/ft_arrfree.c.o
 filler: CMakeFiles/filler.dir/libft/ft_atoi.c.o
 filler: CMakeFiles/filler.dir/libft/ft_bzero.c.o

@@ -19,22 +19,6 @@ sys/stat.h
 -
 libft/libft.h
 /Users/amartyne/filler/libft/libft.h
-get_next_line.h
-/Users/amartyne/filler/get_next_line.h
-
-/Users/amartyne/filler/get_next_line.h
-stdlib.h
--
-unistd.h
--
-libft/libft.h
-/Users/amartyne/filler/libft/libft.h
-sys/types.h
--
-sys/stat.h
--
-fcntl.h
--
 
 /Users/amartyne/filler/libft/libft.h
 string.h
@@ -43,8 +27,14 @@ stdlib.h
 -
 unistd.h
 -
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
 
-/Users/amartyne/filler/write_file.c
+/Users/amartyne/filler/piece.c
 filler.h
 /Users/amartyne/filler/filler.h
 stdio.h

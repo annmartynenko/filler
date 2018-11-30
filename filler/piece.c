@@ -20,20 +20,19 @@ void	copy_piece(char *file, t_inf *map, int *i1)
 
 	i = 0;
 	j1 = 0;
+	if ((*i1) == map->row)
+		map->piece[(*i1)] = 0;
 	while(file[i])
 	{
 		if (file[i] == '*')
-		{
-			map->piece[(*i1)][j1] = -4;
-			j1++;
-		}
+			map->piece[(*i1)][j1++] = -4;
 		else if (file[i] == '.')
+			map->piece[(*i1)][j1++] = -5;
+		if (file[i + 1] && file[i + 1] == '\0')
 		{
-			map->piece[(*i1)][j1] = -5;
-			j1++;
+			map->piece[(*i1)] = 0;
+			break;
 		}
-//		if (file [i + 1] && file[i + 1] == '\0')
-//			map->piece[(*i1)][j1] = 0;
 		i++;
 	}
 	if (j1 != 0)

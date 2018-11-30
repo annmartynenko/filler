@@ -23,7 +23,7 @@ ft_strjoin.c ft_strtrim.c ft_putendl.c ft_putnbr.c ft_putchar_fd.c \
 ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_strsplit.c ft_itoa.c \
 ft_lstnew.c ft_lstdelone.c ft_lstadd.c ft_lstiter.c ft_lstdel.c ft_lstmap.c \
 ft_swap.c ft_foreach.c ft_sqrt.c ft_range.c ft_power.c ft_arrfree.c \
-ft_lstaddback.c
+ft_lstaddback.c get_next_line.c
 
 HDR = libft.h
 
