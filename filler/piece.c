@@ -20,25 +20,32 @@ void	copy_piece(char *file, t_inf *map, int *i1)
 
 	i = 0;
 	j1 = 0;
-	if ((*i1) == map->row)
-		map->piece[(*i1)] = 0;
 	while(file[i])
 	{
 		if (file[i] == '*')
 			map->piece[(*i1)][j1++] = -4;
 		else if (file[i] == '.')
 			map->piece[(*i1)][j1++] = -5;
-		if (file[i + 1] && file[i + 1] == '\0')
+		if (i + 1 < map->column && file[i + 1] == '\0')
 		{
-			map->piece[(*i1)] = 0;
+			map->piece[(*i1)][j1] = 0;
 			break;
 		}
 		i++;
 	}
 	if (j1 != 0)
 		(*i1)++;
+
 	if ((*i1) == map->row)
+	{
 		map->piece[(*i1)] = 0;
+		mk_distance(map);
+		find_t(map);
+		ft_printf("%d %d\n", map->t[0], map->t[1]);
+		map->column = 0;
+		map->row = 0;
+		(*i1) = 0;
+	}
 }
 
 void	mk_piece(t_inf *map)
@@ -71,6 +78,7 @@ void	count_piece_len(char *file, t_inf *map)
 		}
 		i++;
 	}
-	mk_piece(map);
+	if (map->column > 0 && map->row > 0)
+		mk_piece(map);
 }
 

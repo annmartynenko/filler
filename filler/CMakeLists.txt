@@ -80,4 +80,19 @@ add_executable(filler
         distance.c
         find_t.c
         can_insert.c
+        ./libft/ft_printf/ft_printf.c
+        ./libft/ft_printf/number.c
+        ./libft/ft_printf/ft_itoa_base.c
+        ./libft/ft_printf/ft_putunsnbr.c
+        ./libft/ft_printf/extra_fun.c ./libft/ft_printf/unicode.c ./libft/ft_printf/find_flag.c
+        ./libft/ft_printf/for_flags.c ./libft/ft_printf/if_flags.c
+        ./libft/ft_printf/ft_putstring.c ./libft/ft_printf/ft_putnumber.c ./libft/ft_printf/specifier.c
+        ./libft/ft_printf/if_flags_d.c
+        ./libft/ft_printf/ft_putchar.c ./libft/ft_printf/ft_putstr.c
+        ./libft/ft_printf/ft_memcpy.c
+        ./libft/ft_printf/ft_putnbr.c ./libft/ft_printf/if_flags_ito.c
+        ./libft/ft_printf/valid.c ./libft/ft_printf/not_spec.c ./libft/ft_printf/ft_itoa_base_int.c
+        ./libft/ft_printf/ft_itoa_unslong.c
+        ./libft/ft_printf/ft_itoa_max.c ./libft/ft_printf/ft_putint.c ./libft/ft_printf/for_add.c
+        ./libft/ft_printf/for_p.c
         )

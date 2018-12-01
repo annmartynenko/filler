@@ -24,11 +24,11 @@ void	fill_start(t_inf *map, char *cart, int *i)
 	{
 		if (cart[k] == '.')
 			map->kart[(*i)][j++] = -3;
-		else if ((cart[k] == 'O' && map->player == 1) ||\
-		(cart[k] == 'X' && map->player == 2))
+		else if (((cart[k] == 'O' || cart[k] == 'o') && map->player == 1) || \
+		((cart[k] == 'X' || cart[k] == 'x') && map->player == 2))
 			map->kart[(*i)][j++] = -1;
-		else if ((cart[k] == 'X' && map->player == 1) ||\
-		(cart[k] == 'O' && map->player == 2))
+		else if (((cart[k] == 'X' || cart[k] == 'x') && map->player == 1) ||\
+		((cart[k] == 'O' || cart[k] == 'o') && map->player == 2) )
 			map->kart[(*i)][j++] = -2;
 		if (cart[k + 1] && cart[k + 1] == '\0')
 			map->kart[(*i)][j] = 0;
@@ -37,7 +37,10 @@ void	fill_start(t_inf *map, char *cart, int *i)
 	if (j != 0)
 		(*i)++;
 	if ((*i) == map->height)
+	{
 		map->kart[(*i)] = 0;
+		(*i) = 0;
+	}
 }
 
 void	start_map(t_inf *map)
@@ -70,7 +73,8 @@ void	count_map_len(char *file, t_inf *map)
 		}
 		i++;
 	}
-	start_map(map);
+	if (map->height > 0 && map->weight > 0)
+		start_map(map);
 }
 /*
 char	**copy_map(char **file, char **map)

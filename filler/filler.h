@@ -29,7 +29,7 @@ typedef struct 	s_inf
 	int column;
 	int **kart;
 	int **piece;
-	int *t;
+	int t[2];
 }				t_inf;
 
 void	write_file(t_inf *map);

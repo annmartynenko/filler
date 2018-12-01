@@ -41,8 +41,8 @@ void	write_file(t_inf *map)
 
 	i_map = 0;
 	i_pie = 0;
-	fd2 = open("../text.txt", O_RDONLY);
-	while (get_next_line(fd2, &tmp))
+	fd2 = open("text.txt", O_WRONLY);
+	while (get_next_line(0, &tmp))
 	{
 		if (map->player == 0)
 			map->player = player_numb(tmp);
@@ -55,13 +55,13 @@ void	write_file(t_inf *map)
 			count_piece_len(tmp, map);
 		if (map->column > 0 && map->row > 0)
 			copy_piece(tmp, map, &i_pie);
-		printf("%s\n", tmp);
+		//dprintf(fd2, "%d %d\n", map->t[0], map->t[1]);
 		ft_strdel(&tmp);
 	}
 	close(fd2);
-	printf("player %d, height %d, weight %d, row %d, column %d \n",\
-	map->player, map->height, map->weight, map->row, map->column);
-	mk_distance(map);
-	find_t(map);
+//	printf("player %d, height %d, weight %d, row %d, column %d \n",\
+//	map->player, map->height, map->weight, map->row, map->column);
+//	mk_distance(map);
+//	find_t(map);
 
 }

@@ -37,25 +37,29 @@ int		can_insert(t_inf *map, int i, int j)
 		y = 0;
 		while (map->piece[x][y])
 		{
-			if (map->piece[x][y] == -4 )
+			if (map->piece[x][y] == -4)
 			{
-				if (diff_x == 0 && diff_y == 0 && map->piece[x][y - 1] == -4)
+//				if (diff_x == 0 && diff_y == 0 && (y > 0 && map->piece[x][y - 1] == -4))
+//				{
+//					diff_x = x;
+//					diff_y = y;
+//				}
+//				else if (diff_x != 0)
+//				{
+//					diff_x = x - diff_x;
+//					diff_y = y - diff_y;
+//				}
+				//printf("i j %d %d, x y %d %d \n",i ,j, x, y);
+				if ((i + x) < map->height && (j + y) < map->weight)
 				{
-					diff_x = x;
-					diff_y = y;
+					if (map->kart[i + x][j + y] == -1)
+						numb_t++;
+					if (numb_t > 1 || !in_frames(map, i, j) || \
+                (map->kart[i + x][j + y] == -2))
+						return (0);
+//					else
+//						j++;
 				}
-				else if (diff_x != 0)
-				{
-					diff_x = x - diff_x;
-					diff_y = y - diff_y;
-				}
-				if (map->kart[i + diff_x][j + diff_y] == -1)
-					numb_t++;
-				if (numb_t > 2 || !in_frames(map, i, j) || \
-				(map->kart[i + diff_x][j + diff_y] == -2))
-					return (0);
-				else
-					j++;
 			}
 			y++;
 		}

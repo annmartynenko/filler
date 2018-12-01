@@ -68,8 +68,8 @@ void	result_t(t_inf *map)
 			{
 				if (map->piece[x][y] == -4)
 				{
-					map->t[0] -= x;
-					map->t[1] -= y;
+					map->t[0] -= y;
+					map->t[1] -= x;
 					break ;
 				}
 				y++;
@@ -89,7 +89,6 @@ void	find_t(t_inf *map)
 	int distance_now;
 
 	i = 0;
-	map->t = (int*)malloc(sizeof(int) * 2);
 	min_distance = map->weight * map->height;
 	while (i < map->height)
 	{
@@ -110,5 +109,5 @@ void	find_t(t_inf *map)
 		}
 		i++;
 	}
-	result_t(map);
+	//result_t(map);
 }
