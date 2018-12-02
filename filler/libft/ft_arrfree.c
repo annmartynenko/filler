@@ -27,3 +27,19 @@ void	ft_arrfree(char **s)
 		free(s);
 	}
 }
+
+void	ft_arrfree_int(int **s)
+{
+	int i;
+
+	i = 0;
+	if (s && (*s))
+	{
+		while (s[i])
+		{
+			free(s[i]);
+			i++;
+		}
+		free(s);
+	}
+}

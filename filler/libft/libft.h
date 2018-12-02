@@ -169,5 +169,6 @@ int					print_nul(t_struct flags, int len, int base, int letter);
 int					print_nul_pr(t_struct flags, int len, int base, int letter);
 int					specifier_j(char *format, int *i, va_list ap,\
 t_struct flags);
+void				ft_arrfree_int(int **s);
 
 #endif

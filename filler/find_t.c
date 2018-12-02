@@ -17,13 +17,9 @@ int		count_distance(t_inf *map, int i, int j)
 {
 	int x;
 	int y;
-	int diff_x;
-	int diff_y;
 	int distance;
 
 	x = 0;
-	diff_x = 0;
-	diff_y = 0;
 	distance = 0;
 	while (map->piece[x])
 	{
@@ -32,19 +28,13 @@ int		count_distance(t_inf *map, int i, int j)
 		{
 			if (map->piece[x][y] == -4 )
 			{
-				if (diff_x == 0 && diff_y == 0)
+				if (map->kart[i + x][j + y] != -1)
 				{
-					distance += map->kart[i + diff_x][j + diff_y];
-					diff_x = x;
-					diff_y = y;
+					if (map->kart[i + x][j + y] == -3)
+						distance += map->weight;
+					else
+						distance += map->kart[i + x][j + y];
 				}
-				else
-				{
-					diff_x = x - diff_x;
-					diff_y = y - diff_y;
-					distance += map->kart[i + diff_x][j + diff_y];
-				}
-				j++;
 			}
 			y++;
 		}

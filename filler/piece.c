@@ -26,7 +26,7 @@ void	copy_piece(char *file, t_inf *map, int *i1)
 			map->piece[(*i1)][j1++] = -4;
 		else if (file[i] == '.')
 			map->piece[(*i1)][j1++] = -5;
-		if (i + 1 < map->column && file[i + 1] == '\0')
+		if (i + 1 == map->column && file[i + 1] == '\0')
 		{
 			map->piece[(*i1)][j1] = 0;
 			break;
@@ -42,6 +42,7 @@ void	copy_piece(char *file, t_inf *map, int *i1)
 		mk_distance(map);
 		find_t(map);
 		ft_printf("%d %d\n", map->t[0], map->t[1]);
+		//ft_arrfree_int(map->piece);
 		map->column = 0;
 		map->row = 0;
 		(*i1) = 0;

@@ -30,8 +30,11 @@ void	fill_start(t_inf *map, char *cart, int *i)
 		else if (((cart[k] == 'X' || cart[k] == 'x') && map->player == 1) ||\
 		((cart[k] == 'O' || cart[k] == 'o') && map->player == 2) )
 			map->kart[(*i)][j++] = -2;
-		if (cart[k + 1] && cart[k + 1] == '\0')
+		if (k + 1 == map->weight + 4 && cart[k + 1] == '\0')
+		{
 			map->kart[(*i)][j] = 0;
+			break;
+		}
 		k++;
 	}
 	if (j != 0)
