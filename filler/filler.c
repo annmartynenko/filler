@@ -15,7 +15,7 @@
 int main()
 {
 	t_inf	map;
-//	int		fd;
+	int		fd;
 //	int		i;
 //	int		j;
 
@@ -29,7 +29,7 @@ int main()
 	map.t[0] = 0;
 	map.t[1] = 0;
 	write_file(&map);
-//	fd = open("../t.txt", O_WRONLY);
+	fd = open("../t.txt", O_WRONLY);
 //	i = 0;
 //	while (i < map.height)
 //	{
@@ -56,6 +56,9 @@ int main()
 //		i++;
 //	}
 //	dprintf(fd, "result %d %d\n", map.t[0], map.t[1]);
-//	close(fd);
+
+	system(" leaks amartyne.filler>> t.txt");
+	close(fd);
+	//system("leaks amartyne.filler");
 	return (0);
 }

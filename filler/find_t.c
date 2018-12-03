@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "filler.h"
-#include "stdio.h"
 
 int		count_distance(t_inf *map, int i, int j)
 {
@@ -19,14 +18,14 @@ int		count_distance(t_inf *map, int i, int j)
 	int y;
 	int distance;
 
-	x = 0;
+	x = -1;
 	distance = 0;
-	while (map->piece[x])
+	while (map->piece[++x])
 	{
-		y = 0;
-		while (map->piece[x][y])
+		y = -1;
+		while (map->piece[x][++y])
 		{
-			if (map->piece[x][y] == -4 )
+			if (map->piece[x][y] == -4)
 			{
 				if (map->kart[i + x][j + y] != -1)
 				{
@@ -36,39 +35,9 @@ int		count_distance(t_inf *map, int i, int j)
 						distance += map->kart[i + x][j + y];
 				}
 			}
-			y++;
 		}
-		x++;
 	}
 	return (distance);
-}
-
-void	result_t(t_inf *map)
-{
-	int x;
-	int y;
-
-	x = 0;
-	if (map->piece[0][0] == -5)
-	{
-		while (map->piece[x])
-		{
-			y = 0;
-			while (map->piece[x][y])
-			{
-				if (map->piece[x][y] == -4)
-				{
-					map->t[0] -= y;
-					map->t[1] -= x;
-					break ;
-				}
-				y++;
-			}
-			if (map->piece[x][y] == -4)
-				break ;
-			x++;
-		}
-	}
 }
 
 void	find_t(t_inf *map)
@@ -78,12 +47,12 @@ void	find_t(t_inf *map)
 	int min_distance;
 	int distance_now;
 
-	i = 0;
+	i = -1;
 	min_distance = map->weight * map->height;
-	while (i < map->height)
+	while (++i < map->height)
 	{
-		j = 0;
-		while (j < map->weight)
+		j = -1;
+		while (++j < map->weight)
 		{
 			if (can_insert(map, i, j))
 			{
@@ -95,9 +64,6 @@ void	find_t(t_inf *map)
 					min_distance = distance_now;
 				}
 			}
-			j++;
 		}
-		i++;
 	}
-	//result_t(map);
 }

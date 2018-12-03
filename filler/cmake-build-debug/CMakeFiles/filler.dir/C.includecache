@@ -44,9 +44,3 @@ unistd.h
 stdarg.h
 -
 
-/Users/amartyne/filler/write_file.c
-filler.h
-/Users/amartyne/filler/filler.h
-stdio.h
-/Users/amartyne/filler/stdio.h
-

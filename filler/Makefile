@@ -12,8 +12,8 @@
 
 NAME =  amartyne.filler
 
-SRC = filler.c write_file.c make_map.c piece.c distance.c\
-can_insert.c find_t.c
+SRC = filler.c write_file.c make_map.c piece.c distance.c can_insert.c \
+find_t.c
 
 HDR = filler.h get_next_line.h
 

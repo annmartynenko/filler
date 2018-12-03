@@ -1,26 +1,1015 @@
- -1  -1  -1  -1  -1  -1  -1  35  34  33  32  31  30  29  28  27  26  25  24  23  22  21  20  21  21  21  21  21  21  20  19  18  17  16  15  14  13  12  11  11 
- -3  -1  -1  -1  -1  -1  -1  34  33  32  31  30  29  28  27  26  25  24  23  22  21  20  19  20  20  20  20  20  20  19  18  17  16  15  14  13  12  11  10  10 
- -3  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  28  27  26  25  24  23  22  21  20  19  18  19  19  19  19  19  19  18  17  16  15  14  13  12  11  10  9  9 
- -3  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  23  22  21  20  19  18  17  18  18  18  18  18  18  17  16  15  14  13  12  11  10  9  8  8 
- -3  -1  -1  -1  -1  -1  -1  -1  30  -1  -1  -1  -1  -1  -1  -1  -1  21  20  19  18  17  16  17  17  17  17  17  17  16  15  14  13  12  11  10  9  8  7  7 
- -3  -1  -1  34  33  32  31  30  29  28  27  26  25  24  -1  22  -1  -1  19  18  17  16  15  16  16  16  16  16  16  15  14  13  12  11  10  9  8  7  6  6 
- -1  -1  -1  -1  32  31  30  29  28  27  26  25  24  23  22  21  20  -1  18  17  16  15  14  15  15  15  15  15  15  14  13  12  11  10  9  8  7  6  5  5 
- 35  34  33  32  31  30  29  28  27  26  25  24  23  22  21  20  19  18  17  16  15  14  13  14  14  14  14  14  14  13  12  11  10  9  8  7  6  5  4  4 
- 34  33  32  31  30  29  28  27  26  25  24  23  22  21  20  19  18  17  16  15  14  13  12  13  13  13  13  13  13  12  11  10  9  8  7  6  5  4  3  3 
- 33  32  31  30  29  28  27  26  25  24  23  22  21  20  19  18  17  16  15  14  13  12  11  12  12  12  12  12  12  11  10  9  8  7  6  5  4  3  2  2 
- 32  31  30  29  28  27  26  25  24  23  22  21  20  19  18  17  16  15  14  13  12  11  10  11  11  11  11  11  11  10  9  8  7  6  5  4  3  2  1  1 
- 31  30  29  28  27  26  25  24  23  22  21  20  19  18  17  16  15  14  13  12  11  10  9  10  10  10  10  10  10  9  8  7  6  5  4  3  2  1  -2  -2 
- 30  29  28  27  26  25  24  23  22  21  20  19  18  17  16  15  14  13  12  11  10  9  8  9  9  9  9  9  9  8  8  7  6  5  4  3  2  1  1  -2 
- 29  28  27  26  25  24  23  22  21  20  19  18  17  16  15  14  13  12  11  10  9  8  7  8  8  8  8  8  8  7  7  6  5  4  3  2  1  -2  -2  -2 
- 28  27  26  25  24  23  22  21  20  19  18  17  16  15  14  13  12  11  10  9  8  7  6  7  7  7  7  7  7  6  6  5  4  3  2  1  1  -2  1  1 
- 27  26  25  24  23  22  21  20  19  18  17  16  15  14  13  12  11  10  9  8  7  6  5  6  6  6  6  6  6  5  5  4  3  2  1  -2  -2  -2  -2  1 
- 26  25  24  23  22  21  20  19  18  17  16  15  14  13  12  11  10  9  8  7  6  5  4  5  5  5  5  5  5  4  4  3  2  1  -2  -2  -2  -2  -2  1 
- 25  24  23  22  21  20  19  18  17  16  15  14  13  12  11  10  9  8  7  6  5  4  3  4  4  4  4  4  4  3  3  3  2  1  -2  -2  -2  1  -2  1 
- 24  23  22  21  20  19  18  17  16  15  14  13  12  11  10  9  8  7  6  5  4  3  2  3  3  3  3  3  3  2  2  2  1  2  1  -2  -2  -2  -2  1 
- 23  22  21  20  19  18  17  16  15  14  13  12  11  10  9  8  7  6  5  4  3  2  1  2  2  2  2  2  2  1  1  1  -2  1  1  -2  -2  1  1  2 
- 22  21  20  19  18  17  16  15  14  13  12  11  10  9  8  7  6  5  4  3  2  1  -2  1  1  1  1  1  1  -2  -2  1  -2  1  1  1  -2  -2  -2  1 
- 21  20  19  18  17  16  15  14  13  12  11  10  9  8  7  6  5  4  3  2  1  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2 
- 22  21  20  19  18  17  16  15  14  13  12  11  10  9  8  7  6  5  4  3  2  1  1  -2  1  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2 
- 23  22  21  20  19  18  17  16  15  14  13  12  11  10  9  8  7  6  5  4  3  2  2  1  1  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2  -2 
- -4  -4  -5  -5  -5  -5  -5 
-result 6 17
+Process:         amartyne.filler [74325]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x108dd0000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  zsh [61697]
+
+Date/Time:       2018-12-03 12:53:26.266 +0200
+Launch Time:     2018-12-03 12:53:26.046 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 74325: 171 nodes malloced for 14 KB
+Process 74325: 0 leaks for 0 total leaked bytes.
+Process:         amartyne.filler [84003]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x100471000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  zsh [61697]
+
+Date/Time:       2018-12-03 15:09:07.238 +0200
+Launch Time:     2018-12-03 15:09:06.921 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 84003: 171 nodes malloced for 14 KB
+Process 84003: 0 leaks for 0 total leaked bytes.
+Process:         amartyne.filler [84014]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10e782000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  zsh [61697]
+
+Date/Time:       2018-12-03 15:09:11.057 +0200
+Launch Time:     2018-12-03 15:09:10.833 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 84014: 171 nodes malloced for 14 KB
+Process 84014: 0 leaks for 0 total leaked bytes.
+Process:         amartyne.filler [90583]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x1075ee000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  zsh [61697]
+
+Date/Time:       2018-12-03 16:34:14.393 +0200
+Launch Time:     2018-12-03 16:34:13.921 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 90583: 171 nodes malloced for 14 KB
+Process 90583: 0 leaks for 0 total leaked bytes.
+Process:         amartyne.filler [90927]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x100e93000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  zsh [61697]
+
+Date/Time:       2018-12-03 16:36:51.492 +0200
+Launch Time:     2018-12-03 16:36:51.121 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 90927: 171 nodes malloced for 14 KB
+Process 90927: 0 leaks for 0 total leaked bytes.
+Process:         amartyne.filler [91192]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x109221000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  zsh [61697]
+
+Date/Time:       2018-12-03 16:38:20.834 +0200
+Launch Time:     2018-12-03 16:38:20.512 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 91192: 171 nodes malloced for 14 KB
+Process 91192: 0 leaks for 0 total leaked bytes.
+Process:         amartyne.filler [91511]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10190e000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  zsh [61697]
+
+Date/Time:       2018-12-03 16:41:03.343 +0200
+Launch Time:     2018-12-03 16:41:02.967 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 91511: 171 nodes malloced for 14 KB
+Process 91511: 0 leaks for 0 total leaked bytes.
+Process:         amartyne.filler [91701]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x1066c1000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [91690]
+
+Date/Time:       2018-12-03 16:41:41.509 +0200
+Launch Time:     2018-12-03 16:41:41.080 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 91701: 172 nodes malloced for 14 KB
+Process 91701: 1 leak for 16 total leaked bytes.
+Leak: 0x7fd09a500000  size=16  zone: DefaultMallocZone_0x1066d1000
+	0x002e2a00 0x00000000 0x00000000 0x00000000 	.*..............
+Process:         amartyne.filler [91724]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10897a000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ??? [1]
+
+Date/Time:       2018-12-03 16:41:45.132 +0200
+Launch Time:     2018-12-03 16:41:44.712 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 91724: 172 nodes malloced for 14 KB
+Process 91724: 1 leak for 16 total leaked bytes.
+Leak: 0x7f9c72400350  size=16  zone: DefaultMallocZone_0x10898a000
+	0x20323000 0x4f4f4f4f 0x0000004f 0x70000000 	.02 OOOOO......p
+Process:         amartyne.filler [91753]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10ff0a000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [91742]
+
+Date/Time:       2018-12-03 16:41:47.619 +0200
+Launch Time:     2018-12-03 16:41:47.219 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 91753: 172 nodes malloced for 14 KB
+Process 91753: 1 leak for 16 total leaked bytes.
+Leak: 0x7ff1a7500030  size=16  zone: DefaultMallocZone_0x10ff1a000
+	0x00002a00 0x80000000 0x00000000 0x80000000 	.*..............
+Process:         amartyne.filler [91783]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x103ee9000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [91772]
+
+Date/Time:       2018-12-03 16:41:58.924 +0200
+Launch Time:     2018-12-03 16:41:58.489 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 91783: 172 nodes malloced for 14 KB
+Process 91783: 1 leak for 16 total leaked bytes.
+Leak: 0x7fc651e00000  size=16  zone: DefaultMallocZone_0x103ef9000
+	0x002e2a00 0xc0000000 0x651e0007 0xc00007fc 	.*.........e....
+Process:         amartyne.filler [91805]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10f65b000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [91794]
+
+Date/Time:       2018-12-03 16:42:00.569 +0200
+Launch Time:     2018-12-03 16:42:00.150 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 91805: 172 nodes malloced for 14 KB
+Process 91805: 1 leak for 16 total leaked bytes.
+Leak: 0x7fea77402710  size=16  zone: DefaultMallocZone_0x10f66b000
+	0x00002a00 0x90000000 0x00000000 0x90000000 	.*..............
+Process:         amartyne.filler [91828]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10b523000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [91817]
+
+Date/Time:       2018-12-03 16:42:01.580 +0200
+Launch Time:     2018-12-03 16:42:01.182 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 91828: 172 nodes malloced for 14 KB
+Process 91828: 1 leak for 16 total leaked bytes.
+Leak: 0x7ffa8ed00000  size=16  zone: DefaultMallocZone_0x10b533000
+	0x002a2a00 0x20000000 0x00000000 0x20000000 	.**.... ....... 
+Process:         amartyne.filler [91885]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x1040aa000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [91874]
+
+Date/Time:       2018-12-03 16:42:14.951 +0200
+Launch Time:     2018-12-03 16:42:13.133 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 91885: 172 nodes malloced for 14 KB
+Process 91885: 1 leak for 16 total leaked bytes.
+Leak: 0x7fa9c9700040  size=16  zone: DefaultMallocZone_0x1040ba000
+	0x002a2e00 0x90000000 0x00000000 0x90000000 	..*.............
+Process:         amartyne.filler [91920]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10edd0000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ??? [1]
+
+Date/Time:       2018-12-03 16:42:21.230 +0200
+Launch Time:     2018-12-03 16:42:16.910 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 91920: 172 nodes malloced for 14 KB
+Process 91920: 1 leak for 16 total leaked bytes.
+Leak: 0x7f86b4600010  size=16  zone: DefaultMallocZone_0x10ede0000
+	0x00002a00 0x40000000 0x00000000 0x40000000 	.*.....@.......@
+Process:         amartyne.filler [91945]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x106581000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [91934]
+
+Date/Time:       2018-12-03 16:42:26.457 +0200
+Launch Time:     2018-12-03 16:42:23.167 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 91945: 172 nodes malloced for 14 KB
+Process 91945: 1 leak for 16 total leaked bytes.
+Leak: 0x7fa740d00000  size=16  zone: DefaultMallocZone_0x106591000
+	0x002a2a00 0x70000000 0x00000000 0x70000000 	.**....p.......p
+Process:         amartyne.filler [91970]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x1013e4000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [91959]
+
+Date/Time:       2018-12-03 16:42:32.529 +0200
+Launch Time:     2018-12-03 16:42:29.601 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 91970: 172 nodes malloced for 14 KB
+Process 91970: 1 leak for 16 total leaked bytes.
+Leak: 0x7f8798500000  size=16  zone: DefaultMallocZone_0x1013f4000
+	0x002e2a00 0xa0000000 0x00000000 0xa0000000 	.*..............
+Process:         amartyne.filler [92066]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x1067a1000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92055]
+
+Date/Time:       2018-12-03 16:43:44.916 +0200
+Launch Time:     2018-12-03 16:43:41.235 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92066: 172 nodes malloced for 14 KB
+Process 92066: 1 leak for 16 total leaked bytes.
+Leak: 0x7faf1a500000  size=16  zone: DefaultMallocZone_0x1067b1000
+	0x2e2e2e00 0x2e2a2e2e 0x00002e2e 0x40000000 	......*........@
+Process:         amartyne.filler [92111]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x101fe5000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92100]
+
+Date/Time:       2018-12-03 16:43:50.041 +0200
+Launch Time:     2018-12-03 16:43:47.578 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92111: 172 nodes malloced for 14 KB
+Process 92111: 1 leak for 16 total leaked bytes.
+Leak: 0x7ffa82402700  size=16  zone: DefaultMallocZone_0x101ff5000
+	0x00002a00 0xd0000000 0x00000000 0xd0000000 	.*..............
+Process:         amartyne.filler [92142]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x107555000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92131]
+
+Date/Time:       2018-12-03 16:44:00.686 +0200
+Launch Time:     2018-12-03 16:43:58.974 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92142: 172 nodes malloced for 14 KB
+Process 92142: 1 leak for 16 total leaked bytes.
+Leak: 0x7fb210e00000  size=16  zone: DefaultMallocZone_0x107565000
+	0x002a2a00 0x20000000 0x00000000 0x20000000 	.**.... ....... 
+Process:         amartyne.filler [92172]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10c99b000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92161]
+
+Date/Time:       2018-12-03 16:44:04.959 +0200
+Launch Time:     2018-12-03 16:44:02.405 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92172: 172 nodes malloced for 14 KB
+Process 92172: 1 leak for 16 total leaked bytes.
+Leak: 0x7fb8eb500000  size=16  zone: DefaultMallocZone_0x10c9ab000
+	0x2e2e2e00 0x2e2e2e2e 0x2e2e2e2e 0x30000700 	...............0
+Process:         amartyne.filler [92226]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x1079e1000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92215]
+
+Date/Time:       2018-12-03 16:44:09.672 +0200
+Launch Time:     2018-12-03 16:44:07.498 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92226: 172 nodes malloced for 14 KB
+Process 92226: 1 leak for 16 total leaked bytes.
+Leak: 0x7f7f2be00010  size=16  zone: DefaultMallocZone_0x1079f1000
+	0x002a2a00 0x20000000 0x00000000 0x20000000 	.**.... ....... 
+Process:         amartyne.filler [92250]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10964b000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92239]
+
+Date/Time:       2018-12-03 16:44:13.290 +0200
+Launch Time:     2018-12-03 16:44:10.652 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92250: 172 nodes malloced for 14 KB
+Process 92250: 1 leak for 16 total leaked bytes.
+Leak: 0x7ff1a1600020  size=16  zone: DefaultMallocZone_0x10965b000
+	0x00002a00 0x00000000 0x00000000 0x00000000 	.*..............
+Process:         amartyne.filler [92277]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x1048f4000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92265]
+
+Date/Time:       2018-12-03 16:44:24.703 +0200
+Launch Time:     2018-12-03 16:44:20.751 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92277: 172 nodes malloced for 14 KB
+Process 92277: 1 leak for 16 total leaked bytes.
+Leak: 0x7fa54b402ca0  size=16  zone: DefaultMallocZone_0x104904000
+	0x00002a00 0x00000000 0x00000000 0x00000000 	.*..............
+Process:         amartyne.filler [92301]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10ad3d000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92289]
+
+Date/Time:       2018-12-03 16:44:29.363 +0200
+Launch Time:     2018-12-03 16:44:26.518 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92301: 172 nodes malloced for 14 KB
+Process 92301: 1 leak for 16 total leaked bytes.
+Leak: 0x7f8431c00350  size=16  zone: DefaultMallocZone_0x10ad4d000
+	0x002a2a00 0xf0000000 0x00000000 0xf0000000 	.**.............
+Process:         amartyne.filler [92326]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x108e1f000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92314]
+
+Date/Time:       2018-12-03 16:44:33.419 +0200
+Launch Time:     2018-12-03 16:44:30.982 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92326: 172 nodes malloced for 14 KB
+Process 92326: 1 leak for 16 total leaked bytes.
+Leak: 0x7fd8a1d00040  size=16  zone: DefaultMallocZone_0x108e2f000
+	0x002a2a00 0xb0000000 0x00000000 0xb0000000 	.**.............
+Process:         amartyne.filler [92349]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10078f000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92337]
+
+Date/Time:       2018-12-03 16:44:37.057 +0200
+Launch Time:     2018-12-03 16:44:34.585 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92349: 172 nodes malloced for 14 KB
+Process 92349: 1 leak for 16 total leaked bytes.
+Leak: 0x7fc27ad00570  size=16  zone: DefaultMallocZone_0x10079f000
+	0x002a2a00 0x90000000 0x00000000 0x90000000 	.**.............
+Process:         amartyne.filler [92378]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10bb86000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92366]
+
+Date/Time:       2018-12-03 16:44:46.730 +0200
+Launch Time:     2018-12-03 16:44:46.343 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92378: 172 nodes malloced for 14 KB
+Process 92378: 1 leak for 16 total leaked bytes.
+Leak: 0x7fb203f00000  size=16  zone: DefaultMallocZone_0x10bb96000
+	0x002e2e00 0x70000000 0x00000000 0x70000000 	.......p.......p
+Process:         amartyne.filler [92400]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10e457000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92388]
+
+Date/Time:       2018-12-03 16:44:48.769 +0200
+Launch Time:     2018-12-03 16:44:48.375 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92400: 172 nodes malloced for 14 KB
+Process 92400: 1 leak for 16 total leaked bytes.
+Leak: 0x7fbd9e700010  size=16  zone: DefaultMallocZone_0x10e467000
+	0x002a2a00 0x90000000 0x00000000 0x90000000 	.**.............
+Process:         amartyne.filler [92423]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x108b5d000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92411]
+
+Date/Time:       2018-12-03 16:44:50.303 +0200
+Launch Time:     2018-12-03 16:44:49.895 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92423: 172 nodes malloced for 14 KB
+Process 92423: 1 leak for 16 total leaked bytes.
+Leak: 0x7f8030500030  size=16  zone: DefaultMallocZone_0x108b6d000
+	0x2e2e2e00 0x002e2e2e 0x00000000 0x60000000 	...............`
+Process:         amartyne.filler [92446]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10e353000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92434]
+
+Date/Time:       2018-12-03 16:44:51.881 +0200
+Launch Time:     2018-12-03 16:44:51.470 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92446: 172 nodes malloced for 14 KB
+Process 92446: 1 leak for 16 total leaked bytes.
+Leak: 0x7fc903f00030  size=16  zone: DefaultMallocZone_0x10e363000
+	0x00002e00 0x40000000 0x00000000 0x40000000 	.......@.......@
+Process:         amartyne.filler [92475]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x105204000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92463]
+
+Date/Time:       2018-12-03 16:45:06.752 +0200
+Launch Time:     2018-12-03 16:45:03.232 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92475: 172 nodes malloced for 14 KB
+Process 92475: 1 leak for 16 total leaked bytes.
+Leak: 0x7fcac7c02700  size=16  zone: DefaultMallocZone_0x105214000
+	0x002e2e00 0x90000000 0x00000000 0x90000000 	................
+Process:         amartyne.filler [92607]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x100ea8000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92595]
+
+Date/Time:       2018-12-03 16:46:44.520 +0200
+Launch Time:     2018-12-03 16:46:39.903 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92607: 181 nodes malloced for 17 KB
+Process 92607: 1 leak for 16 total leaked bytes.
+Leak: 0x7f95a9e00000  size=16  zone: DefaultMallocZone_0x100eb8000
+	0x2e2e2e00 0x90002e2a 0x00000000 0x90000000 	....*...........
+Process:         amartyne.filler [92634]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10b10b000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ??? [1]
+
+Date/Time:       2018-12-03 16:46:59.197 +0200
+Launch Time:     2018-12-03 16:46:53.122 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92634: 181 nodes malloced for 17 KB
+Process 92634: 1 leak for 16 total leaked bytes.
+Leak: 0x7ffdd7d00040  size=16  zone: DefaultMallocZone_0x10b11b000
+	0x2a2e2e00 0x002e2a2a 0x00000000 0x30000000 	...***.........0
+Process:         amartyne.filler [92661]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x100c88000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92649]
+
+Date/Time:       2018-12-03 16:47:01.109 +0200
+Launch Time:     2018-12-03 16:47:00.818 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92661: 181 nodes malloced for 17 KB
+Process 92661: 1 leak for 16 total leaked bytes.
+Leak: 0x7fb3a0d00000  size=16  zone: DefaultMallocZone_0x100c98000
+	0x2e2e2e00 0x002a2a2e 0x00000000 0x90000000 	.....**.........
+Process:         amartyne.filler [92730]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10ff31000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ??? [1]
+
+Date/Time:       2018-12-03 16:47:31.351 +0200
+Launch Time:     2018-12-03 16:47:23.563 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92730: 181 nodes malloced for 17 KB
+Process 92730: 1 leak for 16 total leaked bytes.
+Leak: 0x7f82f4c038d0  size=16  zone: DefaultMallocZone_0x10ff41000
+	0x002a2e00 0x10000000 0x00000000 0x10000000 	..*.............
+Process:         amartyne.filler [92907]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10dcf1000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92896]
+
+Date/Time:       2018-12-03 16:47:46.878 +0200
+Launch Time:     2018-12-03 16:47:40.539 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92907: 181 nodes malloced for 17 KB
+Process 92907: 1 leak for 16 total leaked bytes.
+Leak: 0x7fb810400350  size=16  zone: DefaultMallocZone_0x10dd01000
+	0x002e0000 0x20342065 0x81040034 0xb00007fb 	....e 4 4.......
+Process:         amartyne.filler [92933]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x103dcb000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92922]
+
+Date/Time:       2018-12-03 16:47:55.489 +0200
+Launch Time:     2018-12-03 16:47:49.500 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92933: 181 nodes malloced for 17 KB
+Process 92933: 1 leak for 16 total leaked bytes.
+Leak: 0x7f8d40d00000  size=16  zone: DefaultMallocZone_0x103ddb000
+	0x00000000 0x60000000 0x00000000 0x60000000 	.......`.......`
+Process:         amartyne.filler [92959]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10b358000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [92948]
+
+Date/Time:       2018-12-03 16:48:03.606 +0200
+Launch Time:     2018-12-03 16:47:57.038 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 92959: 181 nodes malloced for 17 KB
+Process 92959: 1 leak for 16 total leaked bytes.
+Leak: 0x7ff6fbd00000  size=16  zone: DefaultMallocZone_0x10b368000
+	0x2e2e2e00 0x40000000 0x6fbd000e 0xa00007ff 	.......@...o....
+Process:         amartyne.filler [93022]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x101953000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [93011]
+
+Date/Time:       2018-12-03 16:48:18.589 +0200
+Launch Time:     2018-12-03 16:48:16.072 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 93022: 181 nodes malloced for 17 KB
+Process 93022: 1 leak for 16 total leaked bytes.
+Leak: 0x7f8b90c027d0  size=16  zone: DefaultMallocZone_0x101963000
+	0x00000000 0x30000000 0xb90c0035 0x000007f8 	.......05.......
+Process:         amartyne.filler [93045]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x101914000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [93034]
+
+Date/Time:       2018-12-03 16:48:22.736 +0200
+Launch Time:     2018-12-03 16:48:20.435 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 93045: 181 nodes malloced for 17 KB
+Process 93045: 1 leak for 16 total leaked bytes.
+Leak: 0x7fdc92e00040  size=16  zone: DefaultMallocZone_0x101924000
+	0x2e2a2a00 0x002e2e2e 0x00000000 0x60000000 	.**............`
+Process:         amartyne.filler [93073]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x108793000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [93061]
+
+Date/Time:       2018-12-03 16:48:32.670 +0200
+Launch Time:     2018-12-03 16:48:30.309 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 93073: 181 nodes malloced for 17 KB
+Process 93073: 1 leak for 16 total leaked bytes.
+Leak: 0x7fd63b700040  size=16  zone: DefaultMallocZone_0x1087a3000
+	0x2a2e2e00 0x002e2e2a 0x63b7000e 0x100007fd 	...**......c....
+Process:         amartyne.filler [93097]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x100abf000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [93085]
+
+Date/Time:       2018-12-03 16:48:35.804 +0200
+Launch Time:     2018-12-03 16:48:33.863 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 93097: 181 nodes malloced for 17 KB
+Process 93097: 1 leak for 16 total leaked bytes.
+Leak: 0x7f93d6700000  size=16  zone: DefaultMallocZone_0x100acf000
+	0x2a2a2a00 0x20000000 0x00000000 0x20000000 	.***... ....... 
+Process:         amartyne.filler [93120]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x105b28000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [93108]
+
+Date/Time:       2018-12-03 16:48:40.404 +0200
+Launch Time:     2018-12-03 16:48:37.715 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 93120: 181 nodes malloced for 17 KB
+Process 93120: 1 leak for 16 total leaked bytes.
+Leak: 0x7fd2b94038b0  size=16  zone: DefaultMallocZone_0x105b38000
+	0x00002a00 0x30000000 0x00000000 0x30000000 	.*.....0.......0
+Process:         amartyne.filler [93147]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x107125000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [93135]
+
+Date/Time:       2018-12-03 16:48:51.728 +0200
+Launch Time:     2018-12-03 16:48:49.579 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 93147: 181 nodes malloced for 17 KB
+Process 93147: 1 leak for 16 total leaked bytes.
+Leak: 0x7fbe11f00030  size=16  zone: DefaultMallocZone_0x107135000
+	0x00000000 0xf0000000 0x00000000 0xf0000000 	................
+Process:         amartyne.filler [93171]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x106d7e000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [93159]
+
+Date/Time:       2018-12-03 16:48:55.861 +0200
+Launch Time:     2018-12-03 16:48:54.140 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 93171: 181 nodes malloced for 17 KB
+Process 93171: 1 leak for 16 total leaked bytes.
+Leak: 0x7ff722600000  size=16  zone: DefaultMallocZone_0x106d8e000
+	0x00000000 0xc0000000 0x00000000 0xc0000000 	................
+Process:         amartyne.filler [93206]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10feb1000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [93194]
+
+Date/Time:       2018-12-03 16:49:09.745 +0200
+Launch Time:     2018-12-03 16:49:07.860 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 93206: 181 nodes malloced for 17 KB
+Process 93206: 1 leak for 16 total leaked bytes.
+Leak: 0x7fb87d4027d0  size=16  zone: DefaultMallocZone_0x10fec1000
+	0x00000000 0x50000000 0x87d40035 0x400007fb 	.......P5......@
+Process:         amartyne.filler [93256]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x108a16000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ruby [93244]
+
+Date/Time:       2018-12-03 16:49:15.720 +0200
+Launch Time:     2018-12-03 16:49:13.614 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 93256: 181 nodes malloced for 17 KB
+Process 93256: 1 leak for 16 total leaked bytes.
+Leak: 0x7f89dd402700  size=16  zone: DefaultMallocZone_0x108a26000
+	0x20202000 0x20003130 0x34203432 0x40003a30 	.   01. 24 40:.@
+Process:         amartyne.filler [93281]
+Path:            /Users/amartyne/filler/amartyne.filler
+Load Address:    0x10ad5d000
+Identifier:      amartyne.filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  ??? [1]
+
+Date/Time:       2018-12-03 16:49:24.535 +0200
+Launch Time:     2018-12-03 16:49:22.131 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 93281: 181 nodes malloced for 17 KB
+Process 93281: 1 leak for 16 total leaked bytes.
+Leak: 0x7fa8c7d00090  size=16  zone: DefaultMallocZone_0x10ad6d000
+	0x00000000 0x10000000 0x00000000 0x10000000 	................

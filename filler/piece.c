@@ -13,14 +13,24 @@
 #include "filler.h"
 #include "stdio.h"
 
+void	final_steps(t_inf *map, int *i)
+{
+	find_t(map);
+	ft_printf("%d %d\n", map->t[0], map->t[1]);
+	ft_arrfree_int(map->piece);
+	map->column = 0;
+	map->row = 0;
+	*i = 0;
+}
+
 void	copy_piece(char *file, t_inf *map, int *i1)
 {
 	int i;
 	int j1;
 
-	i = 0;
+	i = -1;
 	j1 = 0;
-	while(file[i])
+	while (file[++i])
 	{
 		if (file[i] == '*')
 			map->piece[(*i1)][j1++] = -4;
@@ -29,23 +39,16 @@ void	copy_piece(char *file, t_inf *map, int *i1)
 		if (i + 1 == map->column && file[i + 1] == '\0')
 		{
 			map->piece[(*i1)][j1] = 0;
-			break;
+			break ;
 		}
-		i++;
 	}
 	if (j1 != 0)
 		(*i1)++;
-
 	if ((*i1) == map->row)
 	{
 		map->piece[(*i1)] = 0;
 		mk_distance(map);
-		find_t(map);
-		ft_printf("%d %d\n", map->t[0], map->t[1]);
-		//ft_arrfree_int(map->piece);
-		map->column = 0;
-		map->row = 0;
-		(*i1) = 0;
+		final_steps(map, i1);
 	}
 }
 
@@ -67,9 +70,9 @@ void	count_piece_len(char *file, t_inf *map)
 	int i;
 
 	i = 0;
-	while(file[i])
+	while (file[i])
 	{
-		if(file[i] == 'e' && file[i + 1] == ' ')
+		if (file[i] == 'e' && file[i + 1] == ' ')
 		{
 			i += 2;
 			map->row = ft_atoi(&file[i]);
@@ -82,4 +85,3 @@ void	count_piece_len(char *file, t_inf *map)
 	if (map->column > 0 && map->row > 0)
 		mk_piece(map);
 }
-

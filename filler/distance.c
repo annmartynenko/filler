@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "filler.h"
-#include "stdio.h"
 
 void	ok_position(t_inf *map, int i, int j, int n)
 {
