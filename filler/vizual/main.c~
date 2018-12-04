@@ -1,0 +1,37 @@
+#include "mlx.h"
+
+int main()
+{
+	void *mlx;
+	void *wind;
+	int i;
+	int j;
+
+	j = 150;
+	i = 150;
+	mlx = mlx_init();
+	wind = mlx_new_window(mlx, 500, 500, "FILLER");
+	while (j < 175)
+	{
+		i = 150;
+		while (i < 175)
+		{
+			mlx_pixel_put(mlx, wind, i, j, 0x62b4b3);
+			i++;
+		}
+		j++;
+	}
+	j = 75;
+	while (j < 100)
+	{
+	   i = 75;
+	   while (i < 100)
+	   {
+		   mlx_pixel_put(mlx, wind, i, j, 0xf2f181);
+		   i++;
+	   }
+	   j++;
+	}
+	mlx_loop(mlx);
+	return (0);
+}
