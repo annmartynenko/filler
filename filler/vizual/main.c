@@ -26,11 +26,12 @@ int main()
 	map.height = 0;
 	map.kart = NULL;
 	map.weight = 0;
-	read_map(&map);
+	//read_map(&map, mlx, wind);
 	//printf("%d %d\n", map.weight, map.weight);
 	fflush(stdout);
 	mlx = mlx_init();
-	wind = mlx_new_window(mlx, 800, 1000, "FILLER");
+	wind = mlx_new_window(mlx, 1000, 1000, "FILLER");
+	read_map(&map, mlx, wind);
 	i = 0;
 	j = 0;
 //	while (i < map.height)
@@ -62,24 +63,7 @@ int main()
 //		}
 //		j++;
 //	}
-	i = 0;
-	while (i < map.height)
-	{
-		j = 0;
-		while (j < map.weight)
-		{
-			if (map.kart[i][j] == -1)
-			{
-				draw((j * 1000 / map.height), \
-                (i * 800 / map.weight), map, mlx, wind);
-			}
-			else if (map.kart[i][j] == -2)
-				draw_q((j * 1000 / map.height),\
-				(i * 800 / map.weight) , map, mlx, wind);
-			j++;
-		}
-		i++;
-	}
+
 //	i = 150;
 //	while (j < 175)
 //	{

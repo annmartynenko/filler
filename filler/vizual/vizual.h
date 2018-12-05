@@ -31,8 +31,9 @@ typedef struct	s_viz
 
 void	fill_start_v(t_viz *map, char *cart, int *i);
 void	count_map_len_v(char *file, t_viz *map);
-int 	read_map(t_viz *map);
+int 	read_map(t_viz *map, void *mlx, void *wind);
 void	draw(int x, int y, t_viz map, void *mlx, void *wind);
 void	draw_q(int x, int y, t_viz map, void *mlx, void *wind);
+void	mke_window(t_viz *map, void *mlx, void *wind);
 
 #endif

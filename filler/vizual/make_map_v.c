@@ -57,7 +57,7 @@ void	count_map_len_v(char *file, t_viz *map)
 	i = 0;
 	while (file[i])
 	{
-//		printf("%c\n", file[i]);
+		printf("%c\n", file[i]);
 		if (file[i] == 'u' && file[i + 1] == ' ')
 		{
 			i += 2;
@@ -72,6 +72,10 @@ void	count_map_len_v(char *file, t_viz *map)
 		}
 		i++;
 	}
-	//printf("%d %d %d\n", map->weight, map->weight , i);
-	start_map_v(map);
+	printf("%d %d %d\n", map->weight, map->weight , i);
+	if (map->height > 0 && map->weight > 0)
+	{
+		start_map_v(map);
+		printf("333\n");
+	}
 }
