@@ -24,10 +24,14 @@ void	fill_start_v(t_viz *map, char *cart, int *i)
 	{
 		if (cart[k] == '.')
 			map->kart[(*i)][j++] = -3;
-		else if (cart[k] == 'O' || cart[k] == 'o')
+		else if (cart[k] == 'O')
 			map->kart[(*i)][j++] = -1;
-		else if (cart[k] == 'X' || cart[k] == 'x')
+		else if (cart[k] == 'X')
 			map->kart[(*i)][j++] = -2;
+		else if (cart[k] == 'x')
+			map->kart[(*i)][j++] = -4;
+		else if (cart[k] == 'o')
+			map->kart[(*i)][j++] = -5;
 		if (k + 1 == map->weight + 4 && cart[k + 1] == '\0')
 			map->kart[(*i)][j] = 0;
 	}
@@ -57,12 +61,10 @@ void	count_map_len_v(char *file, t_viz *map)
 	i = 0;
 	while (file[i])
 	{
-		printf("%c\n", file[i]);
 		if (file[i] == 'u' && file[i + 1] == ' ')
 		{
 			i += 2;
 			map->height = ft_atoi(&file[i]);
-			printf("%c\n", file[i]);
 			if (map->height < 100)
 				i += 2;
 			else
@@ -72,10 +74,6 @@ void	count_map_len_v(char *file, t_viz *map)
 		}
 		i++;
 	}
-	printf("%d %d %d\n", map->weight, map->weight , i);
 	if (map->height > 0 && map->weight > 0)
-	{
 		start_map_v(map);
-		printf("333\n");
-	}
 }

@@ -13,7 +13,6 @@
 #include "vizual.h"
 #include <stdio.h>
 
-
 int		player_numb_v(char *file)
 {
 	int i;
@@ -33,62 +32,46 @@ int		player_numb_v(char *file)
 	return (play_n);
 }
 
-void	final(t_viz *map)
+void	result(char *tmp, t_viz *map)
 {
-	int fd2;
-	int i;
-	int j;
-
-	fd2 = open("final.txt", O_WRONLY);
-	i = 0;
-	while(i < map->height)
-	{
-		j = 0;
-		while (j < map->weight)
-		{
-			dprintf(fd2, "%d ", map->kart[i][j]);
-			j++;
-		}
-		dprintf(fd2, "\n");
-		i++;
-	}
-	close(fd2);
+	if (ft_strncmp("== O fin:", tmp, 9))
+		mlx_string_put(map->mlx, map->wind, 300, 950, 0xf2f181, ft_itoa(ft_atoi(&tmp[9])));
+	else if (ft_strncmp("== X fin:", tmp, 9))
+		mlx_string_put(map->mlx, map->wind, 800, 950, 0x90ee90, ft_itoa(ft_atoi(&tmp[9])));
 }
 
-int read_map(t_viz *map, void *mlx, void *wind)
+int		read_map(t_viz *map)
 {
-	char *tmp;
-	int fd;
-	int i_map;
+	char	*tmp;
+	int		i_map;
 
 	i_map = 0;
-	fd = open("karta.txt", O_RDONLY);
 	while (get_next_line(0, &tmp))
 	{
-		//printf("%s \n", tmp);
-//		if (map->player == 0)
-//			map->player = player_numb_v(tmp);
-		//printf("%d %d %d\n", map->weight, map->height, i_map);
+		if (ft_strnstr("== ", tmp, 3) > 0)
+		{
+			printf("%s\n", tmp);
+			result(tmp, map);
+		}
+		if (map->player == 0)
+			player_numb_v(tmp);
 		if (map->height == 0 && map->weight == 0)
-		{
 			count_map_len_v(tmp, map);
-			//printf("111\n");
-		}
-		//printf("444\n");
 		if (map->height > 0 && map->weight > 0 && tmp[0] == '0')
-		{
-			//printf("555\n");
 			fill_start_v(map, tmp, &i_map);
-			//printf("222\n");
-		}
 		if (i_map == map->height && i_map > 0)
-		{
-			mke_window(map, mlx, wind);
-			i_map = 0;
-			final(map);
-		}
+			break ;
 		ft_strdel(&tmp);
 	}
-	close(fd);
-	return(1);
+	if (get_next_line(0, &tmp))
+	{
+		printf("%s\n", tmp);
+		if (ft_strnstr("== ", tmp, 3) > 0)
+			result(tmp, map);
+	}
+	mlx_clear_window(map->mlx, map->wind);
+	mlx_string_put(map->mlx, map->wind, 200, 950, 0xf2f181, "player 1");
+	mlx_string_put(map->mlx, map->wind, 600, 950, 0x90ee90, "player 2");
+	mke_window(map);
+	return (1);
 }

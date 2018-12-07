@@ -14,78 +14,26 @@
 #include "vizual.h"
 #include <stdio.h>
 
-int main()
+int	exit_x(t_viz *map)
 {
-	void *mlx;
-	void *wind;
-	int i;
-	int j;
+	(void)map;
+	exit(1);
+	return (0);
+}
+
+int	main(void)
+{
 	t_viz map;
 
-	map.player = 1;
+	map.player = 0;
 	map.height = 0;
 	map.kart = NULL;
 	map.weight = 0;
-	//read_map(&map, mlx, wind);
-	//printf("%d %d\n", map.weight, map.weight);
 	fflush(stdout);
-	mlx = mlx_init();
-	wind = mlx_new_window(mlx, 1000, 1000, "FILLER");
-	read_map(&map, mlx, wind);
-	i = 0;
-	j = 0;
-//	while (i < map.height)
-//	{
-//		j = 0;
-//		while (j < 800)
-//		{
-//			mlx_pixel_put(mlx, wind, (j * 1000 / map.height), \
-//        i, 0x62b4b3);
-//	//printf("%d %d\n",(i * 1000 / map.height), (j * 1000 / map.weight));
-////				mlx_pixel_put(mlx, wind, (i * 1000 / map.weight),\
-////				(j * 1000 / map.height), 0xf2f181);
-//			j++;
-//		}
-//		i++;
-//	}
-//	j = 0;
-//	while (j < map.weight)
-//	{
-//		i = 0;
-//		while (i < 1000)
-//		{
-//			mlx_pixel_put(mlx, wind, j, \
-//        (i * 800 / map.weight), 0x62b4b3);
-//			//printf("%d %d\n",(i * 1000 / map.height), (j * 1000 / map.weight));
-////				mlx_pixel_put(mlx, wind, (i * 1000 / map.weight),\
-////				(j * 1000 / map.height), 0xf2f181);
-//			i++;
-//		}
-//		j++;
-//	}
-
-//	i = 150;
-//	while (j < 175)
-//	{
-//		i = 150;
-//		while (i < 175)
-//		{
-//			mlx_pixel_put(mlx, wind, i, j, 0x62b4b3);
-//			i++;
-//		}
-//		j++;
-//	}
-//	j = 75;
-//	while (j < 100)
-//	{
-//	   i = 75;
-//	   while (i < 100)
-//	   {
-//		   mlx_pixel_put(mlx, wind, i, j, 0xf2f181);
-//		   i++;
-//	   }
-//	   j++;
-//	}
-	mlx_loop(mlx);
+	map.mlx = mlx_init();
+	map.wind = mlx_new_window(map.mlx, 900, 1000, "FILLER");
+	mlx_loop_hook(map.mlx, read_map, &map);
+	mlx_hook(map.wind, 17, 0, exit_x, &map);
+	mlx_loop(map.mlx);
 	return (0);
 }
