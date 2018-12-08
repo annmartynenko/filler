@@ -30,6 +30,8 @@ typedef struct	s_viz
 	int **kart;
 	void *wind;
 	void *mlx;
+	char *resO;
+	char *resX;
 }				t_viz;
 
 void	fill_start_v(t_viz *map, char *cart, int *i);

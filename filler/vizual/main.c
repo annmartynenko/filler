@@ -29,6 +29,8 @@ int	main(void)
 	map.height = 0;
 	map.kart = NULL;
 	map.weight = 0;
+	map.resO = NULL;
+	map.resX = NULL;
 	fflush(stdout);
 	map.mlx = mlx_init();
 	map.wind = mlx_new_window(map.mlx, 900, 1000, "FILLER");

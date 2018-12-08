@@ -34,13 +34,13 @@ int		player_numb(char *file)
 void	write_file(t_inf *map)
 {
 	char	*tmp;
-	int		fd2;
+//	int		fd2;
 	int		i_map;
 	int		i_pie;
 
 	i_map = 0;
 	i_pie = 0;
-	fd2 = open("../text.txt", O_WRONLY);
+//	fd2 = open("../text.txt", O_RDONLY);
 	while (get_next_line(0, &tmp))
 	{
 		if (map->player == 0)
@@ -56,5 +56,6 @@ void	write_file(t_inf *map)
 			copy_piece(tmp, map, &i_pie);
 		ft_strdel(&tmp);
 	}
-	close(fd2);
+	ft_strdel(&tmp);
+//	close(fd2);
 }

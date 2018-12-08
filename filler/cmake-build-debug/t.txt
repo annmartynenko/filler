@@ -1,0 +1,133 @@
+Process:         filler [27658]
+Path:            /Users/amartyne/filler/cmake-build-debug/filler
+Load Address:    0x108508000
+Identifier:      filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  clion [17627]
+
+Date/Time:       2018-12-08 12:42:20.280 +0200
+Launch Time:     2018-12-08 12:42:19.989 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 27658: 171 nodes malloced for 14 KB
+Process 27658: 0 leaks for 0 total leaked bytes.
+Process:         filler [27676]
+Path:            /Users/amartyne/filler/cmake-build-debug/filler
+Load Address:    0x109fd1000
+Identifier:      filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  clion [17627]
+
+Date/Time:       2018-12-08 12:42:24.057 +0200
+Launch Time:     2018-12-08 12:42:23.822 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 27676: 171 nodes malloced for 14 KB
+Process 27676: 0 leaks for 0 total leaked bytes.
+Process:         filler [27773]
+Path:            /Users/amartyne/filler/cmake-build-debug/filler
+Load Address:    0x1038fa000
+Identifier:      filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  clion [17627]
+
+Date/Time:       2018-12-08 12:43:09.406 +0200
+Launch Time:     2018-12-08 12:43:09.139 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 27773: 171 nodes malloced for 14 KB
+Process 27773: 0 leaks for 0 total leaked bytes.
+Process:         filler [27800]
+Path:            /Users/amartyne/filler/cmake-build-debug/filler
+Load Address:    0x10575e000
+Identifier:      filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  clion [17627]
+
+Date/Time:       2018-12-08 12:43:16.441 +0200
+Launch Time:     2018-12-08 12:43:16.186 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 27800: 171 nodes malloced for 14 KB
+Process 27800: 0 leaks for 0 total leaked bytes.
+Process:         filler [27863]
+Path:            /Users/amartyne/filler/cmake-build-debug/filler
+Load Address:    0x108f3f000
+Identifier:      filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  clion [17627]
+
+Date/Time:       2018-12-08 12:43:51.335 +0200
+Launch Time:     2018-12-08 12:43:51.100 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 27863: 171 nodes malloced for 14 KB
+Process 27863: 0 leaks for 0 total leaked bytes.
+Process:         filler [28876]
+Path:            /Users/amartyne/filler/cmake-build-debug/filler
+Load Address:    0x10a2ab000
+Identifier:      filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  clion [17627]
+
+Date/Time:       2018-12-08 12:56:58.140 +0200
+Launch Time:     2018-12-08 12:56:57.876 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 28876: 171 nodes malloced for 14 KB
+Process 28876: 0 leaks for 0 total leaked bytes.
+Process:         filler [28914]
+Path:            /Users/amartyne/filler/cmake-build-debug/filler
+Load Address:    0x1083e0000
+Identifier:      filler
+Version:         ???
+Code Type:       X86-64
+Parent Process:  clion [17627]
+
+Date/Time:       2018-12-08 12:57:15.509 +0200
+Launch Time:     2018-12-08 12:57:15.248 +0200
+OS Version:      Mac OS X 10.13.3 (17D47)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 9.2 (9C40b)
+----
+
+leaks Report Version:  2.0
+Process 28914: 171 nodes malloced for 14 KB
+Process 28914: 0 leaks for 0 total leaked bytes.

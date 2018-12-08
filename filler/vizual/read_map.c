@@ -34,10 +34,17 @@ int		player_numb_v(char *file)
 
 void	result(char *tmp, t_viz *map)
 {
-	if (ft_strncmp("== O fin:", tmp, 9))
-		mlx_string_put(map->mlx, map->wind, 300, 950, 0xf2f181, ft_itoa(ft_atoi(&tmp[9])));
-	else if (ft_strncmp("== X fin:", tmp, 9))
-		mlx_string_put(map->mlx, map->wind, 800, 950, 0x90ee90, ft_itoa(ft_atoi(&tmp[9])));
+
+	if (ft_strncmp("== O fin:", tmp, 9) == 0)
+	{
+		map->resO = ft_strnew(ft_strlen(ft_itoa(ft_atoi(&tmp[9]))));
+		ft_strcpy(map->resO, ft_itoa(ft_atoi(&tmp[9])));
+	}
+	else if (ft_strncmp("== X fin:", tmp, 9) == 0)
+	{
+		map->resX = ft_strnew(ft_strlen(ft_itoa(ft_atoi(&tmp[9]))));
+		ft_strcpy(map->resX, ft_itoa(ft_atoi(&tmp[9])));
+	}
 }
 
 int		read_map(t_viz *map)
@@ -48,30 +55,27 @@ int		read_map(t_viz *map)
 	i_map = 0;
 	while (get_next_line(0, &tmp))
 	{
-		if (ft_strnstr("== ", tmp, 3) > 0)
-		{
-			printf("%s\n", tmp);
+		if (ft_strncmp("== ", tmp, 3) == 0)
 			result(tmp, map);
-		}
 		if (map->player == 0)
 			player_numb_v(tmp);
 		if (map->height == 0 && map->weight == 0)
 			count_map_len_v(tmp, map);
 		if (map->height > 0 && map->weight > 0 && tmp[0] == '0')
 			fill_start_v(map, tmp, &i_map);
-		if (i_map == map->height && i_map > 0)
-			break ;
+		if (i_map == map->height && i_map > 0 && (ft_strncmp("Plateau", tmp, 7) == 0 ||\
+		ft_strnstr("== ", tmp, 3) == 0))
+			break;
 		ft_strdel(&tmp);
-	}
-	if (get_next_line(0, &tmp))
-	{
-		printf("%s\n", tmp);
-		if (ft_strnstr("== ", tmp, 3) > 0)
-			result(tmp, map);
 	}
 	mlx_clear_window(map->mlx, map->wind);
 	mlx_string_put(map->mlx, map->wind, 200, 950, 0xf2f181, "player 1");
 	mlx_string_put(map->mlx, map->wind, 600, 950, 0x90ee90, "player 2");
+	if (map->resO != NULL && map->resX != NULL)
+	{
+		mlx_string_put(map->mlx, map->wind, 300, 950, 0xf2f181, map->resO);
+		mlx_string_put(map->mlx, map->wind, 700, 950, 0x90ee90, map->resX);
+	}
 	mke_window(map);
 	return (1);
 }

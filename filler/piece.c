@@ -21,6 +21,8 @@ void	final_steps(t_inf *map, int *i)
 	map->column = 0;
 	map->row = 0;
 	*i = 0;
+	map->t[0] = 0;
+	map->t[1] = 0;
 }
 
 void	copy_piece(char *file, t_inf *map, int *i1)
